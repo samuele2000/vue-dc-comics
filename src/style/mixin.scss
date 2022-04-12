@@ -1,0 +1,7 @@
+@import './variabili.scss';
+
+@mixin listaOrizzontale {
+    list-style-type: none;
+    display: flex;
+    
+}
