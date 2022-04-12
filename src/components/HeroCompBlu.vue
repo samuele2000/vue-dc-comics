@@ -2,7 +2,7 @@
   <div>
       <ul>
           <li v-for="(element, index) in menuHero" :key="index">
-              <img src="`../assets/img/element.img`" alt="">
+              <img src="`../assets/img/${element.img}`" alt="">
               <a href="#">{{element.name}}</a>
           </li>
       </ul>

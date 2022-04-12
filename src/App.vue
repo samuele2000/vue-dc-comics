@@ -15,6 +15,10 @@
       </section>
     </main>
 
+    <footer>
+      <FooterCompComics/>
+    </footer>
+
 
   </div>
 </template>
@@ -23,13 +27,15 @@
   import NavComp from './components/NavComp.vue'
   import HeroComp from './components/HeroComp.vue'
   import HeroCompBlu from './components/HeroCompBlu.vue'
+  import FooterCompComics from './components/FooterCompComics.vue'
 
   export default {
     name: 'App',
     components: {
       NavComp,
       HeroComp,
-      HeroCompBlu
+      HeroCompBlu,
+      FooterCompComics
       //HelloWorld
     }
   }
@@ -43,7 +49,7 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
+    //text-align: center;
     
   }
 
