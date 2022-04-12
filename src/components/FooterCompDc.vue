@@ -1,7 +1,7 @@
 <template>
 
     <ul>
-        <h4>DC COMICS</h4>
+        <h4>DC</h4>
         <li v-for="(element, index) in menuFooterComics" :key="index">
             <a href="`${element.url}`">{{element.name}}</a>
         </li>
@@ -11,37 +11,56 @@
 
 <script>
     export default {
-        name: 'FooterCompComics',
+        name: 'FooterCompDc',
         data() {
             return {
                 menuFooterComics: [{
-                        name: 'Characters',
+                        name: 'Term of use',
                         url: '/Characters'
                     },
                     {
-                        name: 'Comics',
+                        name: 'Privacy policy',
                         url: '/Comics'
                     },
                     {
-                        name: 'Movies',
+                        name: 'Ad Choise',
                         url: '/Movies'
                     },
                     {
-                        name: 'TV',
+                        name: 'Advertising',
                         url: '/TV'
                     },
                     {
-                        name: 'Games',
+                        name: 'Jobs',
                         url: '/Games'
                     },
                     {
-                        name: 'Videos',
+                        name: 'Subscription',
                         url: '/Videos'
                     },
                     {
-                        name: 'News',
+                        name: 'Talent Workshops',
                         url: '/News'
                     },
+                    {
+                        name: 'CPSC Cerfificates',
+                        url: '/News'
+                    },
+                    {
+                        name: 'Ratings',
+                        url: '/News'
+                    },
+                    {
+                        name: 'shop Help',
+                        url: '/News'
+                    },
+                    {
+                        name: 'Contact Us',
+                        url: '/News'
+                    },
+
+
+
 
                 ]
             }
@@ -65,6 +84,5 @@
     a {
         color: grey;
         text-decoration: none;
-
     }
 </style>

@@ -10,14 +10,31 @@
     <main>
       <!-- hero -->
       <section id="hero">
-        <HeroComp/>
-        <HeroCompBlu/>
+        <HeroComp />
+        <HeroCompBlu />
       </section>
     </main>
 
     <footer>
-      <FooterCompComics/>
+      <section id="link">
+        <div>
+          <FooterCompComics />
+          <FooterCompDc />
+          <FooterCompSites />
+          <FooterCompShop />
+        </div>
+      </section>
+     
+      <section id="social">
+        <FooterCompSocial/>
+      </section>
+
+
+
     </footer>
+
+
+
 
 
   </div>
@@ -28,6 +45,11 @@
   import HeroComp from './components/HeroComp.vue'
   import HeroCompBlu from './components/HeroCompBlu.vue'
   import FooterCompComics from './components/FooterCompComics.vue'
+  import FooterCompDc from './components/FooterCompDc.vue'
+  import FooterCompSites from './components/FooterCompSites.vue'
+  import FooterCompShop from './components/FooterCompShop.vue'
+  import FooterCompSocial from './components/FooterCompSocial.vue'
+
 
   export default {
     name: 'App',
@@ -35,22 +57,28 @@
       NavComp,
       HeroComp,
       HeroCompBlu,
-      FooterCompComics
-      //HelloWorld
+      FooterCompComics,
+      FooterCompDc,
+      FooterCompSites,
+      FooterCompShop,
+      FooterCompSocial
     }
   }
 </script>
 
 <style lang="scss">
-  body{
+@import './style/variabili.scss';
+
+  body {
     margin: 0;
   }
+
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     //text-align: center;
-    
+
   }
 
   header {
@@ -64,11 +92,26 @@
     img {
       width: 70%;
     }
+  }
 
-    main{
+  footer {
+    #link {
+      background-image: url(./assets/img/footer-bg.jpg);
+      padding: 20px 0;
+      display: flex;
+    }
+
+    div {
       width: 80%;
       margin: auto;
-      
+      display: flex;
+      flex-wrap: wrap;
     }
+
+    #social{
+      background-color: $gray-dc;
+      padding: 20px 0;
+    }
+
   }
 </style>

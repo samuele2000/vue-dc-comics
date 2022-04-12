@@ -1,7 +1,7 @@
 <template>
 
     <ul>
-        <h4>DC COMICS</h4>
+        <h4>SITES</h4>
         <li v-for="(element, index) in menuFooterComics" :key="index">
             <a href="`${element.url}`">{{element.name}}</a>
         </li>
@@ -11,36 +11,28 @@
 
 <script>
     export default {
-        name: 'FooterCompComics',
+        name: 'FooterCompSites',
         data() {
             return {
                 menuFooterComics: [{
-                        name: 'Characters',
+                        name: 'DC',
                         url: '/Characters'
                     },
                     {
-                        name: 'Comics',
+                        name: 'MAD Magazine',
                         url: '/Comics'
                     },
                     {
-                        name: 'Movies',
+                        name: 'DC kids',
                         url: '/Movies'
                     },
                     {
-                        name: 'TV',
+                        name: 'DC Universe',
                         url: '/TV'
                     },
                     {
-                        name: 'Games',
+                        name: 'DC Power Visa',
                         url: '/Games'
-                    },
-                    {
-                        name: 'Videos',
-                        url: '/Videos'
-                    },
-                    {
-                        name: 'News',
-                        url: '/News'
                     },
 
                 ]
@@ -65,6 +57,5 @@
     a {
         color: grey;
         text-decoration: none;
-
     }
 </style>
