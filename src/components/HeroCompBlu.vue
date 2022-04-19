@@ -73,6 +73,7 @@
         a {
             color: white;
             text-decoration: none;
+            margin: 0 15px;
         }
     }
 </style>
