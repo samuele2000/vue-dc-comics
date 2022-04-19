@@ -23,18 +23,24 @@
 
     <footer>
       <section id="link">
-        <div class="links">
-          <FooterCompComics />
-          <FooterCompDc />
-          <FooterCompSites />
-          <FooterCompShop />
-          <FooterCompLogo />
+        <div class="box">
+          <div class="links">
+            <FooterCompComics />
+            <FooterCompDc />
+            <FooterCompSites />
+            <FooterCompShop />
+            <FooterCompLogo />
+          </div>
+          <div class="logo-dc"></div>
+          
         </div>
 
       </section>
-
       <section id="social">
-        <FooterCompSocial />
+        <div class="box-social">
+         <FooterCompSocial /> 
+        </div>
+        
       </section>
     </footer>
   </div>
@@ -120,14 +126,26 @@
   footer {
     #link {
       background-image: url(./assets/img/footer-bg.jpg);
-      padding: 20px 0;
+      
+      
+    }
+  .box{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+    .logo-dc {
+      background-image: url(./assets/img/dc-logo-bg.png);
+      width: 40%;
+      background-size: cover;
+      background-position-y: center;
     }
 
     .links {
-      width: 80%;
-      margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
     }
 
 
@@ -135,10 +153,9 @@
       background-color: $gray-dc;
       padding: 20px 0;
     }
-  }
-
-  .logo-dc {
-    background-image: url(./assets/img/dc-logo-bg.png);
-    background-size: contain;
+    .box-social{
+      width: 80%;
+      margin: 0 auto;
+    }
   }
 </style>
