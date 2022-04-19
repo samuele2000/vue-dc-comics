@@ -10,64 +10,71 @@
     <main>
       <!-- hero -->
       <section id="hero">
-        <HeroComp />
+        <div class="jumbotron">
+          
+        </div>
+        <HeroCompDark />
         <HeroCompBlu />
       </section>
     </main>
 
     <footer>
       <section id="link">
-        <div>
+        <div class="links">
           <FooterCompComics />
           <FooterCompDc />
           <FooterCompSites />
           <FooterCompShop />
+          <FooterCompLogo/>
         </div>
+
       </section>
-     
+
       <section id="social">
-        <FooterCompSocial/>
+        <FooterCompSocial />
       </section>
-
-
-
     </footer>
-
-
-
-
-
   </div>
 </template>
 
+
+
+
+
+
+
+
+
 <script>
   import NavComp from './components/NavComp.vue'
-  import HeroComp from './components/HeroComp.vue'
+  import HeroCompDark from './components/HeroCompDark.vue'
   import HeroCompBlu from './components/HeroCompBlu.vue'
   import FooterCompComics from './components/FooterCompComics.vue'
   import FooterCompDc from './components/FooterCompDc.vue'
   import FooterCompSites from './components/FooterCompSites.vue'
   import FooterCompShop from './components/FooterCompShop.vue'
   import FooterCompSocial from './components/FooterCompSocial.vue'
+  import FooterCompLogo from './components/FooterCompLogo.vue'
 
 
   export default {
     name: 'App',
     components: {
       NavComp,
-      HeroComp,
+      HeroCompDark,
       HeroCompBlu,
       FooterCompComics,
       FooterCompDc,
       FooterCompSites,
       FooterCompShop,
-      FooterCompSocial
+      FooterCompSocial,
+      FooterCompLogo
     }
   }
 </script>
 
 <style lang="scss">
-@import './style/variabili.scss';
+  @import './style/variabili.scss';
 
   body {
     margin: 0;
@@ -94,26 +101,40 @@
     }
   }
 
- 
+  main{
+    #hero{
+      .jumbotron{
+        height: 400px;
+        background-image: url(./assets/img/jumbotron.jpg);
+        background-size: cover;
+      }  
+    }
+  }
+
+
 
   footer {
     #link {
       background-image: url(./assets/img/footer-bg.jpg);
       padding: 20px 0;
-      display: flex;
     }
 
-    div {
+    .links {
       width: 80%;
-      margin: auto;
+      margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
     }
 
-    #social{
+
+    #social {
       background-color: $gray-dc;
       padding: 20px 0;
     }
+  }
 
+  .logo-dc {
+    background-image: url(./assets/img/dc-logo-bg.png);
+    background-size: contain;
   }
 </style>
