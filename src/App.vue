@@ -94,6 +94,8 @@
     }
   }
 
+ 
+
   footer {
     #link {
       background-image: url(./assets/img/footer-bg.jpg);
