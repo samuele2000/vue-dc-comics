@@ -10,11 +10,14 @@
     <main>
       <!-- hero -->
       <section id="hero">
-        <div class="jumbotron">
-          
+        <div class="jumbotron"></div>
+        <div>
+          <HeroCompDark />
+          <HeroCompBlu />
         </div>
-        <HeroCompDark />
-        <HeroCompBlu />
+
+
+
       </section>
     </main>
 
@@ -25,7 +28,7 @@
           <FooterCompDc />
           <FooterCompSites />
           <FooterCompShop />
-          <FooterCompLogo/>
+          <FooterCompLogo />
         </div>
 
       </section>
@@ -101,15 +104,16 @@
     }
   }
 
-  main{
-    #hero{
-      .jumbotron{
+  main {
+    #hero {
+      .jumbotron {
         height: 400px;
         background-image: url(./assets/img/jumbotron.jpg);
         background-size: cover;
-      }  
+      }
     }
   }
+
 
 
 

@@ -1,9 +1,13 @@
 <template>
-  <div>
+  <div class="container">
+    <div class="box-h3">
+      <h3>CURRENT SERIES</h3>
+    </div>
     <div class="box">
-      <ComicsComp v-for="(element, index) in listaComics" :key="index" 
-      :src="element.thumb" 
-      :nome="element.series"/>
+      <ComicsComp v-for="(element, index) in listaComics" :key="index" :src="element.thumb" :nome="element.series" />
+    </div>
+    <div class="button">
+      <a href="#">LOAD MORE</a>
     </div>
   </div>
 </template>
@@ -104,16 +108,47 @@
 <style scoped lang="scss">
   @import '../style/variabili.scss';
 
-  div {
+  .container {
     background-color: $dark;
-    padding: 30px 0;
+    padding: 40px 0;
     color: white;
   }
-  .box{
+
+  .box {
     width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  // .box-h3{
+  //   margin-top: 10px;
+  // }
+  .button {
+    text-align: center;
+    margin-top: 30px;
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #027BF3;
+      padding: 5px 40px;
+    }
+  }
+
+  .box-h3{
+    margin-top: -85px ;
+    margin-left: 130px;
+    h3{
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background-color: #027BF3;
+      padding: 10px;
+      font-size: 1.3em;
+      
+    }
   }
 </style>
